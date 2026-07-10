@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Al Abbasia Welfare Trust - Core Design System
    ========================================================================== */
 
@@ -49,8 +49,10 @@ body {
 }
 
 body.lang-ur {
-  font-family: "Noto Nastaliq Urdu", serif;
-  line-height: 2.05;
+  font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.9;
 }
 
 body.lang-ur h1,
@@ -58,7 +60,7 @@ body.lang-ur h2,
 body.lang-ur h3,
 body.lang-ur .brand strong,
 body.lang-ur .btn {
-  font-family: "Noto Nastaliq Urdu", serif;
+  font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
 }
 
 img {
@@ -1406,3 +1408,4 @@ body[dir="rtl"] .timeline-item::before {
 .not-found {
   min-height: 58vh;
 }
+

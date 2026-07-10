@@ -1,4 +1,4 @@
-# Al Abbasia Welfare Trust Website Design System
+﻿# Al Abbasia Welfare Trust Website Design System
 
 ## Brand Direction
 
@@ -20,7 +20,7 @@ The website presents Al Abbasia Welfare Trust as a credible, local, human-center
 
 - English headings use Poppins SemiBold.
 - English body text uses Inter.
-- Urdu pages use Noto Nastaliq Urdu and right-to-left layout.
+- Urdu pages use Noto Sans Arabic with right-to-left layout for a clean, modern Urdu interface.
 - Heading hierarchy remains calm: strong but not oversized, with consistent line-height and spacing.
 
 ## Spacing Rules
@@ -52,3 +52,4 @@ The website presents Al Abbasia Welfare Trust as a credible, local, human-center
 - Decorative motion respects `prefers-reduced-motion`.
 - Images use lazy loading except key hero media.
 - No Bootstrap, Tailwind, jQuery, React, or Vue are used.
+

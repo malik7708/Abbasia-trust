@@ -1,4 +1,4 @@
-# Al Abbasia Welfare Trust Website
+﻿# Al Abbasia Welfare Trust Website
 
 Production-style bilingual Flask website for Al Abbasia Welfare Trust, built with Flask, Jinja2, HTML5, CSS3 and vanilla JavaScript.
 
@@ -6,7 +6,7 @@ Production-style bilingual Flask website for Al Abbasia Welfare Trust, built wit
 
 - English and Urdu routes: `/en/` and `/ur/`
 - Flask session-based language preference
-- RTL Urdu layout with Noto Nastaliq Urdu
+- RTL Urdu layout with Noto Sans Arabic
 - Responsive pages for home, about, projects, gallery, news, donate, volunteer and contact
 - Real NGO imagery organized under `static/images/`
 - Gallery filtering and lightbox
@@ -33,3 +33,4 @@ Open:
 - Set `SECRET_KEY` in the deployment environment.
 - Set `SITE_URL` to the real domain for sitemap and robots output.
 - Replace donation account and QR details only after official verification.
+
