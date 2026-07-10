@@ -36,7 +36,13 @@ body {
   margin: 0;
   color: var(--body);
   background: var(--background);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   line-height: 1.72;
   text-rendering: optimizeLegibility;
@@ -208,7 +214,11 @@ body.lang-ur .eyebrow {
   cursor: pointer;
   font-weight: 700;
   line-height: 1;
-  transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
 }
 
 .btn:hover {
@@ -313,6 +323,40 @@ body[dir="rtl"] .text-link .fa-arrow-right {
   text-underline-offset: 3px;
 }
 
+/* Mobile: hide long address, keep phone and language on one line, reduce height */
+@media (max-width: 640px) {
+  .top-strip__inner {
+    min-height: 30px;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  /* hide the address on small screens */
+  .top-strip__inner > span:first-child {
+    display: none;
+  }
+
+  /* make phone link and language switch sit together */
+  .top-strip__inner > a[href^="tel:"],
+  .top-strip__inner .language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-switch {
+    padding: 3px 8px;
+    font-size: 0.88rem;
+  }
+
+  .top-strip a,
+  .top-strip span {
+    font-size: 0.92rem;
+  }
+}
+
 .navbar__inner {
   display: flex;
   align-items: center;
@@ -403,7 +447,9 @@ body[dir="rtl"] .text-link .fa-arrow-right {
   height: 2px;
   margin: 4px auto;
   background: var(--heading);
-  transition: transform var(--transition), opacity var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
 }
 
 /* ==========================================================================
@@ -854,7 +900,11 @@ body[dir="rtl"] .timeline-item::before {
 
 .page-hero {
   padding-block: 82px;
-  background: linear-gradient(180deg, var(--section-background), var(--background));
+  background: linear-gradient(
+    180deg,
+    var(--section-background),
+    var(--background)
+  );
 }
 
 .page-hero p {
@@ -1085,7 +1135,13 @@ body[dir="rtl"] .timeline-item::before {
   height: 96px;
   margin-bottom: 16px;
   color: var(--royal-blue);
-  background: repeating-linear-gradient(45deg, #ffffff, #ffffff 8px, #f4f7f6 8px, #f4f7f6 16px);
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 8px,
+    #f4f7f6 8px,
+    #f4f7f6 16px
+  );
   border: 1px solid var(--border);
   border-radius: var(--radius);
   font-size: 2.2rem;
