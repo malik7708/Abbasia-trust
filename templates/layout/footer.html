@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="{{ url_for('static', filename='images/logo-awt.jpg') }}" alt="{{ t.meta.site_name }} logo" width="64" height="64">
+      <h2>{{ t.meta.site_name }}</h2>
+      <p>{{ t.footer.about }}</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3>{{ t.footer.quick_links }}</h3>
+      <ul class="footer-links">
+        <li><a href="{{ url_for('localized_page', lang=lang, page_name='about') }}">{{ t.nav.about }}</a></li>
+        <li><a href="{{ url_for('localized_page', lang=lang, page_name='projects') }}">{{ t.nav.projects }}</a></li>
+        <li><a href="{{ url_for('localized_page', lang=lang, page_name='gallery') }}">{{ t.nav.gallery }}</a></li>
+        <li><a href="{{ url_for('localized_page', lang=lang, page_name='volunteer') }}">{{ t.nav.volunteer }}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>{{ t.footer.contact_title }}</h3>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ t.contact.address }}</li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+923005293396">{{ t.contact.phone }}</a></li>
+        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:{{ t.contact.email }}">{{ t.contact.email }}</a></li>
+      </ul>
+    </div>
+    <div class="footer-donate">
+      <h3>{{ t.nav.donate }}</h3>
+      <p>{{ t.home.cta.text }}</p>
+      <a class="btn btn-primary" href="{{ url_for('localized_page', lang=lang, page_name='donate') }}">{{ t.actions.donate }}</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 {{ t.meta.site_name }}. {{ t.footer.rights }}</p>
+    </div>
+  </div>
+</footer>

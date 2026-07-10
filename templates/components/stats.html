@@ -1,0 +1,8 @@
+<div class="stats-card" aria-label="Impact statistics">
+  {% for stat in t.stats %}
+    <div class="stat-item">
+      <strong><span data-counter="{{ stat.value }}">0</span>{{ stat.suffix }}</strong>
+      <span>{{ stat.label }}</span>
+    </div>
+  {% endfor %}
+</div>

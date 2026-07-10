@@ -1,0 +1,4 @@
+<button class="gallery-card reveal" type="button" data-gallery-item data-category="{{ item.category }}" data-full="{{ url_for('static', filename='images/' ~ item.image) }}" data-title="{{ item.title }}" aria-label="{{ item.title }}">
+  <img src="{{ url_for('static', filename='images/' ~ item.image) }}" alt="{{ item.alt }}" loading="lazy">
+  <span>{{ item.title }}</span>
+</button>

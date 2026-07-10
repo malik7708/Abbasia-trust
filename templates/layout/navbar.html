@@ -1,0 +1,37 @@
+<header class="site-header" data-header>
+  <div class="top-strip">
+    <div class="container top-strip__inner">
+      <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ t.contact.short_address }}</span>
+      <a href="tel:+923005293396"><i class="fa-solid fa-phone" aria-hidden="true"></i>{{ t.contact.phone }}</a>
+      <span class="language-switch" aria-label="Language selector">
+        <a class="{{ 'active' if lang == 'ur' else '' }}" href="{{ urdu_url }}">اردو</a>
+        <span>|</span>
+        <a class="{{ 'active' if lang == 'en' else '' }}" href="{{ english_url }}">EN</a>
+      </span>
+    </div>
+  </div>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container navbar__inner">
+      <a class="brand" href="{{ url_for('home', lang=lang) }}" aria-label="{{ t.meta.site_name }}">
+        <img src="{{ url_for('static', filename='images/logo-awt.jpg') }}" alt="{{ t.meta.site_name }} logo" width="56" height="56">
+        <span>
+          <strong>{{ t.meta.site_name }}</strong>
+          <small>{{ t.meta.tagline }}</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">{{ "Open menu" if lang == "en" else "مینو کھولیں" }}</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="primary-menu" data-nav-menu>
+        <a class="{{ 'active' if current_page == 'home' else '' }}" href="{{ url_for('home', lang=lang) }}">{{ t.nav.home }}</a>
+        <a class="{{ 'active' if current_page == 'about' else '' }}" href="{{ url_for('localized_page', lang=lang, page_name='about') }}">{{ t.nav.about }}</a>
+        <a class="{{ 'active' if current_page == 'projects' else '' }}" href="{{ url_for('localized_page', lang=lang, page_name='projects') }}">{{ t.nav.projects }}</a>
+        <a class="{{ 'active' if current_page == 'gallery' else '' }}" href="{{ url_for('localized_page', lang=lang, page_name='gallery') }}">{{ t.nav.gallery }}</a>
+        <a class="{{ 'active' if current_page == 'news' else '' }}" href="{{ url_for('localized_page', lang=lang, page_name='news') }}">{{ t.nav.news }}</a>
+        <a class="{{ 'active' if current_page == 'contact' else '' }}" href="{{ url_for('localized_page', lang=lang, page_name='contact') }}">{{ t.nav.contact }}</a>
+        <a class="btn btn-primary btn-small" href="{{ url_for('localized_page', lang=lang, page_name='donate') }}">{{ t.nav.donate }}</a>
+      </div>
+    </div>
+  </nav>
+</header>

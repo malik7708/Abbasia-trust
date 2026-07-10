@@ -1,0 +1,14 @@
+<article class="card news-card reveal" data-title="{{ article.title | lower }}" data-category="{{ article.category | lower }}">
+  <a class="card-image" href="{{ url_for('localized_page', lang=lang, page_name='news') }}">
+    <img src="{{ url_for('static', filename='images/' ~ article.image) }}" alt="{{ article.alt }}" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="badge badge-blue">{{ article.category }}</span>
+      <span>{{ article.date }}</span>
+    </div>
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.excerpt }}</p>
+    <a class="text-link" href="{{ url_for('localized_page', lang=lang, page_name='news') }}">{{ t.actions.read_more }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</article>

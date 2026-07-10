@@ -1,0 +1,30 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container narrow reveal">
+      <span class="eyebrow">{{ t.nav.projects }}</span>
+      <h1>{{ "Practical welfare programs for real community needs." if lang == "en" else "حقیقی کمیونٹی ضرورت کے لیے عملی فلاحی پروگرام۔" }}</h1>
+      <p>{{ "AWT focuses on support that families can feel immediately while also creating pathways toward stability." if lang == "en" else "AWT ایسی مدد پر توجہ دیتا ہے جو فوری سہارا بھی بنے اور خاندانوں کو استحکام کی طرف بھی لے جائے۔" }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container card-grid three">
+      {% for project in t.projects %}
+        {% include "components/project-card.html" %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="donation-cta">
+    <div class="container donation-cta__inner reveal">
+      <div>
+        <span class="eyebrow">{{ t.nav.donate }}</span>
+        <h2>{{ t.home.cta.title }}</h2>
+        <p>{{ t.home.cta.text }}</p>
+      </div>
+      <a class="btn btn-primary" href="{{ url_for('localized_page', lang=lang, page_name='donate') }}">{{ t.actions.donate }}</a>
+    </div>
+  </section>
+{% endblock %}

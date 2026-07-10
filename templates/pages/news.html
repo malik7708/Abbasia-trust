@@ -1,0 +1,45 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container narrow reveal">
+      <span class="eyebrow">{{ t.nav.news }}</span>
+      <h1>{{ "News, campaigns and field updates." if lang == "en" else "خبریں، مہمات اور فیلڈ اپڈیٹس۔" }}</h1>
+      <p>{{ "Follow AWT activities, support appeals and local media coverage in one professional news room." if lang == "en" else "AWT کی سرگرمیوں، امدادی اپیلز اور مقامی میڈیا کوریج کو ایک جگہ پڑھیں۔" }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {% set featured = t.news[0] %}
+      <article class="featured-news reveal">
+        <img src="{{ url_for('static', filename='images/' ~ featured.image) }}" alt="{{ featured.alt }}" loading="lazy">
+        <div>
+          <div class="card-meta">
+            <span class="badge badge-blue">{{ featured.category }}</span>
+            <span>{{ featured.date }}</span>
+          </div>
+          <h2>{{ featured.title }}</h2>
+          <p>{{ featured.excerpt }}</p>
+          <a class="text-link" href="#news-list">{{ t.actions.read_more }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <div class="news-tools reveal">
+        <label class="sr-only" for="news-search">{{ t.actions.search }}</label>
+        <input id="news-search" type="search" placeholder="{{ t.actions.search }}" data-news-search>
+        <div class="pagination" aria-label="Pagination">
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      </div>
+
+      <div class="card-grid three" id="news-list" data-news-list>
+        {% for article in t.news %}
+          {% include "components/news-card.html" %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

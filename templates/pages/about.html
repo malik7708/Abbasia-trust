@@ -1,0 +1,100 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container narrow reveal">
+      <span class="eyebrow">{{ t.nav.about }}</span>
+      <h1>{{ "A local welfare trust serving Rawalpindi with care." if lang == "en" else "راولپنڈی کی خدمت کرنے والا مقامی فلاحی ٹرسٹ۔" }}</h1>
+      <p>{{ t.about.intro }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-grid">
+      <div class="section-copy reveal">
+        <span class="eyebrow">{{ "History" if lang == "en" else "تاریخ" }}</span>
+        <h2>{{ "Rooted in community need." if lang == "en" else "کمیونٹی ضرورت سے جڑا ہوا کام۔" }}</h2>
+        <p>{{ t.about.history }}</p>
+      </div>
+      <div class="info-stack">
+        <article class="mini-card reveal">
+          <h3>{{ t.home.mission.title }}</h3>
+          <p>{{ t.home.mission.text }}</p>
+        </article>
+        <article class="mini-card reveal">
+          <h3>{{ t.home.vision.title }}</h3>
+          <p>{{ t.home.vision.text }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "Objectives" if lang == "en" else "مقاصد" }}</span>
+        <h2>{{ "What we work toward" if lang == "en" else "ہم کن مقاصد کے لیے کام کرتے ہیں" }}</h2>
+      </div>
+      <div class="objectives-grid">
+        {% for objective in t.about.objectives %}
+          <article class="objective-card reveal">
+            <span>{{ loop.index }}</span>
+            <p>{{ objective }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container ceo-panel reveal">
+      <div class="ceo-photo">
+        <img src="{{ url_for('static', filename='images/' ~ t.home.ceo.image) }}" alt="{{ t.home.ceo.alt }}" loading="lazy">
+      </div>
+      <div class="ceo-copy">
+        <span class="eyebrow">{{ t.home.ceo.eyebrow }}</span>
+        <h2>{{ t.home.ceo.title }}</h2>
+        <p>{{ t.home.ceo.text }}</p>
+        <div class="signature">
+          <strong>{{ t.home.ceo.name }}</strong>
+          <span>{{ t.home.ceo.role }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container timeline-wrap">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "Timeline" if lang == "en" else "ٹائم لائن" }}</span>
+        <h2>{{ "How the work has grown" if lang == "en" else "کام کیسے آگے بڑھا" }}</h2>
+      </div>
+      <div class="timeline">
+        {% for item in t.about.timeline %}
+          <article class="timeline-item reveal">
+            <span>{{ item.year }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "Achievements" if lang == "en" else "کامیابیاں" }}</span>
+        <h2>{{ "Quiet progress, meaningful impact" if lang == "en" else "خاموش پیش رفت، بامعنی اثر" }}</h2>
+      </div>
+      <div class="check-grid">
+        {% for achievement in t.about.achievements %}
+          <div class="check-item reveal">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>{{ achievement }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "site_name": "Abbasia Welfare Trust",
+    "short_name": "AWT",
+    "tagline": "Serving people with dignity, care and accountability.",
+    "description": "Abbasia Welfare Trust is a Rawalpindi-based non-profit supporting poverty alleviation, healthcare, education, skill development and humanitarian relief.",
+    "keywords": "Abbasia Welfare Trust, AWT Pakistan, Rawalpindi charity, NGO Pakistan, food distribution, medical assistance, education support"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "news": "News",
+    "donate": "Donate",
+    "volunteer": "Volunteer",
+    "contact": "Contact"
+  },
+  "actions": {
+    "donate": "Donate Now",
+    "volunteer": "Become a Volunteer",
+    "read_more": "Read More",
+    "view_projects": "View Projects",
+    "view_gallery": "View Gallery",
+    "send": "Send Message",
+    "submit": "Submit Application",
+    "search": "Search news"
+  },
+  "contact": {
+    "address": "Office No. 1, First Floor, Zaman Plaza, Double Road, near Shamsabad, Rawalpindi, Pakistan",
+    "short_address": "Zaman Plaza, Double Road, Rawalpindi",
+    "phone": "+92 300 5293396",
+    "email": "info@alabbasiawelfaretrust.org",
+    "hours": "Monday to Saturday, 10:00 AM – 6:00 PM"
+  },
+  "pages": {
+    "home": {
+      "title": "Abbasia Welfare Trust | Community Welfare NGO in Rawalpindi",
+      "description": "Support Abbasia Welfare Trust in food distribution, medical assistance, education, emergency relief and skill development programs."
+    },
+    "about": {
+      "title": "About AWT | Abbasia Welfare Trust",
+      "description": "Learn about the mission, history, values and community work of Abbasia Welfare Trust."
+    },
+    "projects": {
+      "title": "Projects | Abbasia Welfare Trust",
+      "description": "Explore AWT welfare projects including food distribution, healthcare, education, Ramadan, winter aid and emergency relief."
+    },
+    "gallery": {
+      "title": "Gallery | Abbasia Welfare Trust",
+      "description": "See real moments from Abbasia Welfare Trust relief activities, events, campaigns and community support work."
+    },
+    "news": {
+      "title": "News | Abbasia Welfare Trust",
+      "description": "Read updates, campaign announcements and media coverage from Abbasia Welfare Trust."
+    },
+    "donate": {
+      "title": "Donate | Abbasia Welfare Trust",
+      "description": "Donate to Abbasia Welfare Trust and help families receive food, healthcare, education and emergency support."
+    },
+    "volunteer": {
+      "title": "Volunteer | Abbasia Welfare Trust",
+      "description": "Join AWT as a volunteer and support practical welfare programs in Rawalpindi communities."
+    },
+    "contact": {
+      "title": "Contact | Abbasia Welfare Trust",
+      "description": "Contact Abbasia Welfare Trust at Zaman Plaza, Double Road, Rawalpindi."
+    },
+    "404": {
+      "title": "Page Not Found | Abbasia Welfare Trust",
+      "description": "The page you are looking for could not be found."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Rawalpindi-based community welfare trust",
+      "title": "Helping families move from hardship to hope.",
+      "text": "Abbasia Welfare Trust supports underserved families through food assistance, medical help, education support, skill development and timely relief programs.",
+      "image": "hero-community-meeting.jpg",
+      "alt": "Abbasia Welfare Trust community meeting in Rawalpindi",
+      "badge": "Local giving. Transparent action."
+    },
+    "who": {
+      "eyebrow": "Who we are",
+      "title": "A grassroots charity built around dignity and practical support.",
+      "text": "Abbasia Welfare Trust, also referenced as Abbasia Welfare Trust, is a non-profit organization located near Shamsabad in Rawalpindi. The trust works closely with local communities to identify genuine needs and deliver responsible welfare support."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "To reduce hardship for vulnerable families by connecting donors, volunteers and community workers with meaningful welfare programs."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "A society where every family has access to food, basic healthcare, learning opportunities and the confidence to rebuild."
+    },
+    "values": [
+      "Dignity first",
+      "Transparent giving",
+      "Community trust",
+      "Sustainable support"
+    ],
+    "ceo": {
+      "eyebrow": "Message from leadership",
+      "title": "A note from our Chairman",
+      "name": "Imran Zafar",
+      "role": "Chairman, Abbasia Welfare Trust",
+      "text": "Our work begins with listening. Every ration bag, medical contribution, school support and relief campaign is a promise that people in difficulty will not be left alone. We welcome donors and volunteers who want their support to reach families with respect and accountability.",
+      "image": "ceo-imran-zafar.png",
+      "alt": "Chairman Imran Zafar of Abbasia Welfare Trust"
+    },
+    "cta": {
+      "title": "Your donation can become food, medicine, learning and relief.",
+      "text": "Support verified community needs through a local team working directly with families in Rawalpindi.",
+      "button": "Make a Donation"
+    }
+  },
+  "stats": [
+    {
+      "value": 500,
+      "suffix": "+",
+      "label": "Families reached"
+    },
+    {
+      "value": 7,
+      "suffix": "",
+      "label": "Active welfare areas"
+    },
+    {
+      "value": 100,
+      "suffix": "%",
+      "label": "Community focused"
+    },
+    {
+      "value": 12,
+      "suffix": "+",
+      "label": "Campaign updates"
+    }
+  ],
+  "projects": [
+    {
+      "category": "Food",
+      "title": "Food Distribution",
+      "description": "Monthly ration support and cooked meal distributions for families facing income pressure and food insecurity.",
+      "image": "food-distribution.jpg",
+      "alt": "AWT volunteers serving food to community members"
+    },
+    {
+      "category": "Healthcare",
+      "title": "Medical Assistance",
+      "description": "Support for medicines, treatment needs, basic medical equipment and urgent health-related family expenses.",
+      "image": "medical-assistance-flyer.jpg",
+      "alt": "Medical assistance campaign poster by Al Abbasia Welfare Trust"
+    },
+
+    {
+      "category": "Relief",
+      "title": "Emergency Relief",
+      "description": "Rapid assistance for families affected by sudden hardship, crisis, illness or local emergency situations.",
+      "image": "meals-project.jpg",
+      "alt": "Prepared meal plates for a welfare campaign"
+    },
+    {
+      "category": "Ramadan",
+      "title": "Ramadan Campaign",
+      "description": "Sehri and iftar support for deserving families, daily wage workers and community members during Ramadan.",
+      "image": "ramadan-iftar-drive.jpg",
+      "alt": "Ramadan iftar campaign poster for AWT"
+    },
+    {
+      "category": "Relief",
+      "title": "Flood Relief Program",
+      "description": "Providing emergency flood relief, clean water, dry food and shelter support for families affected by flood damage.",
+      "image": "meals-project.jpg",
+      "alt": "Flood relief support for affected families by Abbasia Welfare Trust"
+    }
+  ],
+  "news": [
+    {
+      "category": "Campaign",
+      "date": "Community Update",
+      "title": "Sehri and Iftar campaign announced for deserving families",
+      "excerpt": "AWT continues Ramadan support through meal assistance and donor-backed food programs for families in need.",
+      "image": "sehri-iftari-campaign.jpg",
+      "alt": "Sehri and Iftar campaign poster"
+    },
+    {
+      "category": "Media",
+      "date": "Press Coverage",
+      "title": "Local newspaper highlights AWT welfare activities",
+      "excerpt": "Community media coverage recognizes the trust's local relief efforts and volunteer-supported food distributions.",
+      "image": "news-awsaaf-coverage.jpg",
+      "alt": "Newspaper coverage of Al Abbasia Welfare Trust"
+    },
+    {
+      "category": "Relief",
+      "date": "Field Activity",
+      "title": "Volunteers serve meals during community support drive",
+      "excerpt": "The field team distributed food with dignity and care during a local welfare activity in Rawalpindi.",
+      "image": "food-distribution.jpg",
+      "alt": "Food distribution activity by volunteers"
+    },
+    {
+      "category": "Healthcare",
+      "date": "Support Appeal",
+      "title": "Medical assistance appeal for essential equipment",
+      "excerpt": "AWT invites donors to support treatment needs and basic medical equipment for families unable to afford care.",
+      "image": "medical-assistance-flyer.jpg",
+      "alt": "Healthcare support appeal"
+    },
+    {
+      "category": "Media",
+      "date": "Press Coverage",
+      "title": "Welfare work featured in community press",
+      "excerpt": "The trust's relief work and Ramadan support received attention through local Urdu media coverage.",
+      "image": "news-sota-coverage.jpg",
+      "alt": "Urdu newspaper coverage of AWT"
+    },
+    {
+      "category": "Winter",
+      "date": "Seasonal Drive",
+      "title": "Winter support reaches vulnerable community members",
+      "excerpt": "AWT's winter campaign helps families prepare for colder months through practical seasonal assistance.",
+      "image": "winter-support-event.jpg",
+      "alt": "Winter support distribution"
+    }
+  ],
+  "gallery": [
+    {
+      "category": "relief",
+      "title": "Community Food Service",
+      "image": "food-distribution.jpg",
+      "alt": "Volunteers distributing food"
+    },
+    {
+      "category": "events",
+      "title": "Community Meeting",
+      "image": "hero-community-meeting.jpg",
+      "alt": "Community meeting with AWT leadership"
+    },
+    {
+      "category": "ramadan",
+      "title": "Ramadan Iftar Drive",
+      "image": "ramadan-iftar-drive.jpg",
+      "alt": "Ramadan iftar campaign graphic"
+    },
+    {
+      "category": "relief",
+      "title": "Prepared Meals",
+      "image": "meals-project.jpg",
+      "alt": "Prepared plates for meal distribution"
+    },
+    {
+      "category": "medical",
+      "title": "Medical Support Appeal",
+      "image": "medical-assistance-flyer.jpg",
+      "alt": "Medical support appeal poster"
+    },
+    {
+      "category": "events",
+      "title": "Winter Support Activity",
+      "image": "winter-support-event.jpg",
+      "alt": "Winter support community activity"
+    },
+    {
+      "category": "news",
+      "title": "Newspaper Coverage",
+      "image": "news-awsaaf-coverage.jpg",
+      "alt": "AWT newspaper coverage"
+    },
+    {
+      "category": "ramadan",
+      "title": "Sehri Iftar Campaign",
+      "image": "sehri-iftari-campaign.jpg",
+      "alt": "Sehri and iftar support poster"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "AWT works close to the people. Their volunteers understand local needs and deliver help with respect.",
+      "name": "Community Donor",
+      "role": "Rawalpindi"
+    },
+    {
+      "quote": "The best thing is the practical approach: food, medicine and support that reaches families when it matters.",
+      "name": "Volunteer Member",
+      "role": "Field Support"
+    }
+  ],
+  "partners": [
+    "Local Donors",
+    "Volunteer Network",
+    "Community Elders",
+    "Media Supporters"
+  ],
+  "about": {
+    "intro": "Abbasia Welfare Trust, also referenced as Abbasia Welfare Trust, is a local non-profit organization based at Office No. 1, First Floor, Zaman Plaza, Double Road near Shamsabad in Rawalpindi, Pakistan.",
+    "history": "The trust was formed to respond to practical community needs: poverty, healthcare costs, food insecurity and the lack of sustainable support for marginalized families. Its work is rooted in local relationships and direct community access.",
+    "objectives": [
+      "Provide food and emergency relief to deserving families.",
+      "Support medical needs for people unable to afford treatment.",
+      "Encourage education and skill-building for long-term independence.",
+      "Build a transparent bridge between donors and verified community needs."
+    ],
+    "timeline": [
+      {
+        "year": "Foundation",
+        "title": "Local welfare work begins",
+        "text": "AWT starts serving families through community-led support and donor-backed assistance."
+      },
+      {
+        "year": "Expansion",
+        "title": "Food and healthcare programs grow",
+        "text": "The trust strengthens food distribution, medical assistance and relief coordination."
+      },
+      {
+        "year": "Today",
+        "title": "Sustainable support focus",
+        "text": "Programs now include education, skill development, Ramadan support and seasonal campaigns."
+      }
+    ],
+    "achievements": [
+      "Recognized by local communities as a reliable point of assistance.",
+      "Delivered Ramadan and food support campaigns with field volunteers.",
+      "Raised awareness through community media coverage.",
+      "Built a volunteer-friendly structure for ongoing welfare work."
+    ]
+  },
+  "donate": {
+    "title": "Give with confidence. Help with dignity.",
+    "intro": "Your donation helps AWT provide food, medical support, education assistance, emergency relief and skill development opportunities.",
+    "why": [
+      "Local team with direct community access.",
+      "Support focused on verified needs.",
+      "Programs designed around dignity, not dependency.",
+      "Every contribution can create immediate practical relief."
+    ],
+    "methods": [
+      {
+        "name": "Bank Transfer",
+        "details": "Account details can be confirmed by calling the official AWT number before sending funds."
+      },
+      {
+        "name": "JazzCash",
+        "details": "Call +92 300 5293396 to confirm current JazzCash donation instructions."
+      },
+      {
+        "name": "EasyPaisa",
+        "details": "Call +92 300 5293396 to confirm current EasyPaisa donation instructions."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can I donate for a specific project?",
+        "answer": "Yes. You can mention food, medical assistance, education, Ramadan, winter support or emergency relief when contacting the trust."
+      },
+      {
+        "question": "How do I verify donation details?",
+        "answer": "Please call the official number before transferring funds to confirm the latest payment instructions."
+      },
+      {
+        "question": "Can I support as a volunteer instead of donating money?",
+        "answer": "Yes. AWT welcomes responsible volunteers for field support, coordination, communication and campaign assistance."
+      }
+    ]
+  },
+  "volunteer": {
+    "title": "Volunteer with purpose.",
+    "intro": "AWT welcomes people who can offer time, skills and sincerity. Volunteers help with field work, documentation, donor coordination, campaign support and community outreach.",
+    "skills": "Field support, content writing, photography, logistics, teaching, healthcare support, fundraising, administration"
+  },
+  "forms": {
+    "success": "Thank you. Your message has been received by the website demo form.",
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "city": "City",
+    "skills": "Skills",
+    "availability": "Availability",
+    "message": "Message"
+  },
+  "footer": {
+    "about": "A local welfare trust serving vulnerable families through food, healthcare, education and relief programs.",
+    "quick_links": "Quick Links",
+    "contact_title": "Contact",
+    "rights": "All rights reserved."
+  }
+}

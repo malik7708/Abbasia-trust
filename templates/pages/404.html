@@ -1,0 +1,12 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero not-found">
+    <div class="container narrow reveal">
+      <span class="eyebrow">404</span>
+      <h1>{{ "This page could not be found." if lang == "en" else "یہ صفحہ دستیاب نہیں۔" }}</h1>
+      <p>{{ "The link may be outdated or the page may have moved." if lang == "en" else "لنک پرانا ہو سکتا ہے یا صفحہ منتقل ہو چکا ہے۔" }}</p>
+      <a class="btn btn-primary" href="{{ url_for('home', lang=lang) }}">{{ t.nav.home }}</a>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,228 @@
+/* ==========================================================================
+   Responsive Layout
+   ========================================================================== */
+
+@media (max-width: 1120px) {
+  .nav-menu {
+    gap: 13px;
+  }
+
+  .brand {
+    min-width: 210px;
+  }
+
+  .card-grid.three,
+  .objectives-grid,
+  .donation-methods {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  :root {
+    --section: 64px;
+  }
+
+  .top-strip__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-block: 8px;
+  }
+
+  .navbar__inner {
+    min-height: 74px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    inset-inline: 20px;
+    top: calc(100% + 10px);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+  }
+
+  .nav-menu > a {
+    padding: 12px;
+  }
+
+  .nav-menu > a:not(.btn)::after {
+    display: none;
+  }
+
+  .nav-menu .btn {
+    margin-top: 8px;
+  }
+
+  .hero-grid,
+  .split-grid,
+  .featured-news,
+  .form-layout,
+  .contact-grid,
+  .ceo-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-block: 64px 86px;
+  }
+
+  .hero-grid {
+    gap: 42px;
+  }
+
+  .hero-media {
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  .hero-badge {
+    inset-inline-start: 16px;
+  }
+
+  .stats-card {
+    inset-inline-end: 16px;
+  }
+
+  .ceo-panel {
+    padding: 24px;
+  }
+
+  .ceo-photo {
+    max-width: 360px;
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .donation-cta__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --section: 48px;
+  }
+
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand strong {
+    max-width: 190px;
+    font-size: 0.94rem;
+  }
+
+  .hero {
+    padding-block: 46px 72px;
+  }
+
+  .hero-copy p,
+  .page-hero p {
+    font-size: 1rem;
+  }
+
+  .hero-actions,
+  .news-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-badge,
+  .stats-card {
+    position: static;
+    margin-top: 14px;
+  }
+
+  .stats-card {
+    width: 100%;
+  }
+
+  .card-grid.three,
+  .values-grid,
+  .objectives-grid,
+  .check-grid,
+  .testimonial-grid,
+  .partner-strip,
+  .donation-methods,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding-block: 56px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+    text-align: start;
+  }
+
+  .featured-news,
+  .form-card {
+    padding: 18px;
+  }
+
+  .masonry-gallery,
+  .gallery-preview {
+    columns: 1;
+  }
+
+  .footer-grid {
+    padding-block: 46px;
+  }
+}
+
+@media (max-width: 440px) {
+  .top-strip__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .brand img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Subtle Motion
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card,
+.gallery-card,
+.method-card,
+.contact-card,
+.objective-card,
+.testimonial-card {
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.card:hover,
+.gallery-card:hover,
+.method-card:hover,
+.contact-card:hover,
+.objective-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(12, 138, 67, 0.22);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

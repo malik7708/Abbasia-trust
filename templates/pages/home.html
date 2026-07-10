@@ -1,0 +1,130 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  {% include "components/hero.html" %}
+
+  <section class="section">
+    <div class="container split-grid">
+      <div class="section-copy reveal">
+        <span class="eyebrow">{{ t.home.who.eyebrow }}</span>
+        <h2>{{ t.home.who.title }}</h2>
+        <p>{{ t.home.who.text }}</p>
+      </div>
+      <div class="values-grid">
+        <article class="mini-card reveal">
+          <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+          <h3>{{ t.home.mission.title }}</h3>
+          <p>{{ t.home.mission.text }}</p>
+        </article>
+        <article class="mini-card reveal">
+          <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          <h3>{{ t.home.vision.title }}</h3>
+          <p>{{ t.home.vision.text }}</p>
+        </article>
+        {% for value in t.home["values"] %}
+          <article class="value-pill reveal">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>{{ value }}</span>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ t.nav.projects }}</span>
+        <h2>{{ "Featured welfare projects" if lang == "en" else "نمایاں فلاحی منصوبے" }}</h2>
+        <p>{{ "Practical programs shaped around real community needs in Rawalpindi." if lang == "en" else "راولپنڈی کی حقیقی کمیونٹی ضروریات کے مطابق عملی پروگرام۔" }}</p>
+      </div>
+      <div class="card-grid three">
+        {% for project in t.projects[:3] %}
+          {% include "components/project-card.html" %}
+        {% endfor %}
+      </div>
+      <div class="section-action">
+        <a class="btn btn-secondary" href="{{ url_for('localized_page', lang=lang, page_name='projects') }}">{{ t.actions.view_projects }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container ceo-panel reveal">
+      <div class="ceo-photo">
+        <img src="{{ url_for('static', filename='images/' ~ t.home.ceo.image) }}" alt="{{ t.home.ceo.alt }}" loading="lazy">
+      </div>
+      <div class="ceo-copy">
+        <span class="eyebrow">{{ t.home.ceo.eyebrow }}</span>
+        <h2>{{ t.home.ceo.title }}</h2>
+        <p>{{ t.home.ceo.text }}</p>
+        <div class="signature">
+          <strong>{{ t.home.ceo.name }}</strong>
+          <span>{{ t.home.ceo.role }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ t.nav.news }}</span>
+        <h2>{{ "Latest updates" if lang == "en" else "تازہ اپڈیٹس" }}</h2>
+        <p>{{ "Campaign announcements, field activity and local media coverage." if lang == "en" else "مہمات، فیلڈ سرگرمیاں اور مقامی میڈیا کوریج۔" }}</p>
+      </div>
+      <div class="card-grid three">
+        {% for article in t.news[:3] %}
+          {% include "components/news-card.html" %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ t.nav.gallery }}</span>
+        <h2>{{ "Real moments from the field" if lang == "en" else "فیلڈ کی حقیقی جھلکیاں" }}</h2>
+      </div>
+      <div class="gallery-preview">
+        {% for item in t.gallery[:4] %}
+          {% include "components/gallery-card.html" %}
+        {% endfor %}
+      </div>
+      <div class="section-action">
+        <a class="btn btn-secondary" href="{{ url_for('localized_page', lang=lang, page_name='gallery') }}">{{ t.actions.view_gallery }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "Community voices" if lang == "en" else "کمیونٹی کی آواز" }}</span>
+        <h2>{{ "Trust is built one family at a time." if lang == "en" else "اعتماد ایک ایک خاندان سے بنتا ہے۔" }}</h2>
+      </div>
+      <div class="testimonial-grid">
+        {% for testimonial in t.testimonials %}
+          {% include "components/testimonial.html" %}
+        {% endfor %}
+      </div>
+      <div class="partner-strip reveal" aria-label="Partners">
+        {% for partner in t.partners %}
+          <span>{{ partner }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="donation-cta">
+    <div class="container donation-cta__inner reveal">
+      <div>
+        <span class="eyebrow">{{ t.nav.donate }}</span>
+        <h2>{{ t.home.cta.title }}</h2>
+        <p>{{ t.home.cta.text }}</p>
+      </div>
+      <a class="btn btn-primary" href="{{ url_for('localized_page', lang=lang, page_name='donate') }}">{{ t.home.cta.button }}</a>
+    </div>
+  </section>
+{% endblock %}

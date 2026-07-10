@@ -1,0 +1,76 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero donate-hero">
+    <div class="container split-grid">
+      <div class="reveal">
+        <span class="eyebrow">{{ t.nav.donate }}</span>
+        <h1>{{ t.donate.title }}</h1>
+        <p>{{ t.donate.intro }}</p>
+        <a class="btn btn-primary" href="tel:+923005293396">{{ t.contact.phone }}</a>
+      </div>
+      <div class="donate-visual reveal">
+        <img src="{{ url_for('static', filename='images/donation-packages.jpg') }}" alt="{{ 'Donation support packages' if lang == 'en' else 'عطیہ سپورٹ پیکجز' }}" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-grid">
+      <div class="section-copy reveal">
+        <span class="eyebrow">{{ "Why donate" if lang == "en" else "عطیہ کیوں دیں" }}</span>
+        <h2>{{ "Your support is converted into practical relief." if lang == "en" else "آپ کا تعاون عملی ریلیف میں بدلتا ہے۔" }}</h2>
+      </div>
+      <div class="check-grid compact">
+        {% for item in t.donate.why %}
+          <div class="check-item reveal">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>{{ item }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "Donation methods" if lang == "en" else "عطیہ کے طریقے" }}</span>
+        <h2>{{ "Confirm details before transferring funds." if lang == "en" else "رقم بھیجنے سے پہلے تفصیل تصدیق کریں۔" }}</h2>
+      </div>
+      <div class="donation-methods">
+        {% for method in t.donate.methods %}
+          <article class="method-card reveal">
+            <i class="fa-solid {{ 'fa-building-columns' if loop.index == 1 else 'fa-mobile-screen-button' }}" aria-hidden="true"></i>
+            <h3>{{ method.name }}</h3>
+            <p>{{ method.details }}</p>
+          </article>
+        {% endfor %}
+        <article class="method-card qr-card reveal">
+          <div class="qr-placeholder" aria-label="QR code placeholder">
+            <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+          </div>
+          <h3>{{ "QR Code" if lang == "en" else "کیو آر کوڈ" }}</h3>
+          <p>{{ "Official QR code can be placed here once banking or wallet details are finalized." if lang == "en" else "بینکنگ یا والٹ تفصیلات فائنل ہونے کے بعد آفیشل کیو آر کوڈ یہاں شامل کیا جا سکتا ہے۔" }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <div class="section-heading reveal">
+        <span class="eyebrow">{{ "FAQ" if lang == "en" else "عام سوالات" }}</span>
+        <h2>{{ "Donation questions" if lang == "en" else "عطیہ سے متعلق سوالات" }}</h2>
+      </div>
+      <div class="faq-list">
+        {% for faq in t.donate.faq %}
+          <details class="faq-item reveal">
+            <summary>{{ faq.question }}</summary>
+            <p>{{ faq.answer }}</p>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

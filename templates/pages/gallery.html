@@ -1,0 +1,35 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div class="container narrow reveal">
+      <span class="eyebrow">{{ t.nav.gallery }}</span>
+      <h1>{{ "A visual record of service and community care." if lang == "en" else "خدمت اور کمیونٹی کی دیکھ بھال کا تصویری ریکارڈ۔" }}</h1>
+      <p>{{ "Browse moments from relief work, Ramadan campaigns, events, medical support and media coverage." if lang == "en" else "ریلیف ورک، رمضان مہمات، تقریبات، طبی مدد اور میڈیا کوریج کی جھلکیاں دیکھیں۔" }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar reveal" aria-label="Gallery filters">
+        <button class="active" type="button" data-filter="all">{{ "All" if lang == "en" else "تمام" }}</button>
+        <button type="button" data-filter="relief">{{ "Relief" if lang == "en" else "ریلیف" }}</button>
+        <button type="button" data-filter="ramadan">{{ "Ramadan" if lang == "en" else "رمضان" }}</button>
+        <button type="button" data-filter="medical">{{ "Medical" if lang == "en" else "طبی" }}</button>
+        <button type="button" data-filter="events">{{ "Events" if lang == "en" else "تقریبات" }}</button>
+        <button type="button" data-filter="news">{{ "News" if lang == "en" else "خبریں" }}</button>
+      </div>
+      <div class="masonry-gallery" data-gallery-grid>
+        {% for item in t.gallery %}
+          {% include "components/gallery-card.html" %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" data-lightbox aria-hidden="true">
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close image"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <img src="" alt="" data-lightbox-image>
+    <p data-lightbox-title></p>
+  </div>
+{% endblock %}
