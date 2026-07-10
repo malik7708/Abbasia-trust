@@ -326,7 +326,7 @@ body[dir="rtl"] .text-link .fa-arrow-right {
 /* Mobile: hide long address, keep phone and language on one line, reduce height */
 @media (max-width: 640px) {
   .top-strip__inner {
-    min-height: 15px;
+    min-height: 30px;
     gap: 10px;
     justify-content: flex-end;
     padding-top: 4px;
