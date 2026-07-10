@@ -338,12 +338,18 @@ body[dir="rtl"] .text-link .fa-arrow-right {
     display: none;
   }
 
-  /* make phone link and language switch sit together */
+  /* make phone link and language switch sit together on one line */
+  .top-strip__inner {
+    flex-wrap: nowrap;
+  }
+
   .top-strip__inner > a[href^="tel:"],
   .top-strip__inner .language-switch {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
+    flex: 0 0 auto;
   }
 
   .language-switch {
